@@ -1,0 +1,52 @@
+[
+    {
+        "text": "Home",
+        "link": "/",
+        "isSubmenu": false
+    },   
+    {
+        "text": "Category",
+        "link": "/category",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "Back Ends",
+                "link": "/customize-i-woocommerce-theme-with-countless-video"
+            },
+            {
+                "text": "Front End",
+                "link": "/404"
+            },
+            {
+                "text": "",
+                "link": "/faq"
+            },
+            {
+                "text": "Register",
+                "link": "/register"
+            }
+        ]
+    },
+    {
+        "text": "Blogs",
+        "link": "/about",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "Medium",
+                "link": ""
+            },
+            {
+                "text": "Blog By CSandun",
+                "link": ""
+            }
+        ]
+
+    },
+    {
+        "text": "About CSandun",
+        "link": "https://csandun.github.io/",
+        "isSubmenu": false,
+        "target": "_blank"
+    }
+]
