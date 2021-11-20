@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import {graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Swiper, { SwiperSlide } from "@components/swiper";
 import HeroSixPost from '../../../components/hero-six';
 import {
@@ -11,31 +11,33 @@ import {
 const HeroArea = () => {
     const heroSixQuery = useStaticQuery(graphql`
     query HeroSixQuery {
-        HeroPost: allMarkdownRemark {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        thume_image {
-                            childImageSharp {
-                                gatsbyImageData(width: 570, height: 425, quality: 100)
-                            }
-                        }
-                    }
-                    fields {
-                        slug
-                        authorId
-                        dateSlug
-                    }
+        HeroPost: allMarkdownRemark (limit: 5, sort: {
+            order: ASC,
+            fields: frontmatter___date
+        } ){
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                thume_image {
+                  childImageSharp {
+                    gatsbyImageData(width: 570, height: 425, quality: 100)
+                  }
                 }
+              }
+              fields {
+                slug
+                authorId
+                dateSlug
+              }
             }
+          }
         }
-        
-    }
+      }
 `);
 
-const heroData = heroSixQuery.HeroPost.edges;
+    const heroData = heroSixQuery.HeroPost.edges;
 
     return (
         <HeroSection>

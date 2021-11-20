@@ -6,30 +6,51 @@
     },   
     {
         "text": "Category",
-        "link": "/category",
+        "link": "",
         "isSubmenu": true,
         "submenu": [
             {
-                "text": "Back Ends",
-                "link": "/customize-i-woocommerce-theme-with-countless-video"
+                "text": ".Net Core",
+                "link": "/category/net-core"
             },
             {
-                "text": "Front End",
-                "link": "/404"
+                "text": ".Net Framework",
+                "link": "/category/net-framework"
             },
             {
-                "text": "",
-                "link": "/faq"
+                "text": "C#",
+                "link": ""
             },
             {
-                "text": "Register",
-                "link": "/register"
+                "text": "React",
+                "link": ""
+            },
+            {
+                "text": "Angular",
+                "link": ""
+            },
+            {
+                "text": "Azure",
+                "link": ""
+            },
+            {
+                "text": "Database",
+                "link": ""
+            },
+            {
+                "text": "Microservice",
+                "link": ""
+            },
+            {
+                "text": "Other",
+                "link": ""
             }
+
         ]
     },
     {
         "text": "Blogs",
-        "link": "/about",
+        "link": "",
         "isSubmenu": true,
         "submenu": [
             {
@@ -38,7 +59,7 @@
             },
             {
                 "text": "Blog By CSandun",
-                "link": ""
+                "link": "http://blogbycsandun.com/"
             }
         ]
 
