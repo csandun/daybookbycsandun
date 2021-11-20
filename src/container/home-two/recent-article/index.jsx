@@ -18,6 +18,10 @@ const RecentArticlesArea = () => {
                 edges {
                     node {
                         id
+                        headings {
+                            value
+                            depth
+                        }
                         frontmatter {
                             title
                             date(formatString: "DD MMMM YYYY")
