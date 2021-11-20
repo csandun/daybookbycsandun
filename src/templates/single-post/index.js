@@ -40,7 +40,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
     const post = data.markdownRemark.frontmatter;
     const {authorId, dateSlug} = data.markdownRemark.fields;
     const {author} = post;
-
+    debugger;
     const image = getImage(post.thume_image.childImageSharp);
 
     // Social Share

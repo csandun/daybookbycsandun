@@ -7,7 +7,7 @@ format: "video"
 video_link: "https://www.youtube.com/watch?v=d7jAiAYusUg"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 categories: 
-    - WordPress
+    - .Net Core
     
 tags:
     - Video

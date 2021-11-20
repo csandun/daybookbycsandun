@@ -131,6 +131,14 @@ const Header = () => {
                                             <NavLink href="mailto:csandun.personal@gmail.com">csandun.personal@gmail.com</NavLink>
                                         </HeaderTopContactText>
                                     </HeaderTopSingleContactItem>
+                                    <HeaderTopSingleContactItem>
+                                        <HeaderTopContactIcon>
+                                            <StaticImage src="../../../data/images/icons/linkedin.png" alt="" />
+                                        </HeaderTopContactIcon>
+                                        <HeaderTopContactText>
+                                            <NavLink href="www.linkedin.com/in/csandun">/in/csandun</NavLink>
+                                        </HeaderTopContactText>
+                                    </HeaderTopSingleContactItem>
 
                                 </HeaderTopContactInfo>
                             </Col>

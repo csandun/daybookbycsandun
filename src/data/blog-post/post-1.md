@@ -7,7 +7,7 @@ format: "image"
 video_link: "https://www.youtube.com/watch?v=d7jAiAYusUg"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 categories: 
-    - Education
+    - .Net Core
     
 tags:
     - Poor

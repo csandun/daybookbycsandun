@@ -4,11 +4,12 @@ import HeartIcon from "@assets/images/svg/heart.svg";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from '../../../components/shared/button'
-import Social, {SocialLink} from "../../../components/social";
-import { StaticImage} from "gatsby-plugin-image"
-import { FooterWrap,
-    FooterTopArea, 
-    FooterWidget, 
+import Social, { SocialLink } from "../../../components/social";
+import { StaticImage } from "gatsby-plugin-image"
+import {
+    FooterWrap,
+    FooterTopArea,
+    FooterWidget,
     FooterDec,
     FooterLogo,
     FooterMenuWidget,
@@ -23,14 +24,14 @@ import { FooterWrap,
     FooterWidgetTitle,
     WidgetTitle,
     FooterWidgetMenuList,
-    NavItem, 
+    NavItem,
 
     FooterBottomArea,
     FooterBottomInner,
     CopyrightText,
     ButtonRightBox
 
-    
+
 } from "./style";
 
 
@@ -57,13 +58,13 @@ const Footer = () => {
         }
     `)
     const { footerAbout, quickLink, quickLinkTwo, quickLinkThree } = footerQuery.footerJson;
-   
+
     return (
         <FooterWrap>
             <FooterTopArea>
                 <Container>
                     <Row>
-                        <Col lg={3} md={6} sm={6}>
+                        <Col lg={6} md={6} sm={6}>
                             <FooterWidget>
                                 <FooterLogo>
                                     <Link to="/">
@@ -71,9 +72,9 @@ const Footer = () => {
                                     </Link>
                                 </FooterLogo>
                                 <FooterDec>{footerAbout}</FooterDec>
-                                <Social 
-                                    sx={{ mt: "30px"}}
-                                    shape="rounded-5" 
+                                <Social
+                                    sx={{ mt: "30px" }}
+                                    shape="rounded-5"
                                     space={15}
                                     bgColor="black"
                                 >
@@ -84,59 +85,41 @@ const Footer = () => {
                                 </Social>
                             </FooterWidget>
                         </Col>
-                        <Col lg={4} md={6} sm={6}>
-                            <FooterWidget className="footer-subscribe-center">
-                                <FooterWidgetTitle>
-                                    <WidgetTitle>Subscribe</WidgetTitle>
-                                </FooterWidgetTitle>
-                                <FooterSubscribeWrap>
-                                    <SingleInput>
-                                        <Input type="text" placeholder="Your Name"/>
-                                    </SingleInput>
-                                    <SingleInput>
-                                        <Input type="email" placeholder="Email Address"/>
-                                    </SingleInput>
-                                    <ButtonBox>
-                                        <Button size="large" shape="rounded-10" type="submit">Subscribe Now</Button>
-                                    </ButtonBox>
-                                </FooterSubscribeWrap>
-                            </FooterWidget>
-                        </Col>
-                        <Col lg={5}>
+                        <Col lg={6} md={6} sm={6}>
                             <FooterMenuWidget>
                                 <SingleFooterMenu>
                                     <FooterWidgetTitle>
-                                        <WidgetTitle>Company</WidgetTitle>
+                                        <WidgetTitle>Site Map</WidgetTitle>
                                     </FooterWidgetTitle>
-                                    
+
                                     <FooterWidgetMenuList>
                                         {quickLink && quickLink.map((linkItem, i) => (
                                             <NavItem key={`id-${i}-one`}>
                                                 <Link to={linkItem.path}>{linkItem.text}</Link>
                                             </NavItem>
                                         ))}
-                                       
+
                                     </FooterWidgetMenuList>
                                 </SingleFooterMenu>
                                 <SingleFooterMenu>
                                     <FooterWidgetTitle>
-                                        <WidgetTitle>Quick Links</WidgetTitle>
+                                        <WidgetTitle>Categories</WidgetTitle>
                                     </FooterWidgetTitle>
-                                    
+
                                     <FooterWidgetMenuList>
                                         {quickLinkTwo && quickLinkTwo.map((linkItem, i) => (
                                             <NavItem key={`id-${i}-one`}>
                                                 <Link to={linkItem.path}>{linkItem.text}</Link>
                                             </NavItem>
                                         ))}
-                                        
+
                                     </FooterWidgetMenuList>
                                 </SingleFooterMenu>
-                                <SingleFooterMenu>
+                                {/* <SingleFooterMenu>
                                     <FooterWidgetTitle>
                                         <WidgetTitle>Category</WidgetTitle>
                                     </FooterWidgetTitle>
-                                    
+
                                     <FooterWidgetMenuList>
                                         {quickLinkThree && quickLinkThree.map((linkItem, i) => (
                                             <NavItem key={`id-${i}-one`}>
@@ -144,7 +127,7 @@ const Footer = () => {
                                             </NavItem>
                                         ))}
                                     </FooterWidgetMenuList>
-                                </SingleFooterMenu>
+                                </SingleFooterMenu> */}
                             </FooterMenuWidget>
                         </Col>
                     </Row>
@@ -156,23 +139,20 @@ const Footer = () => {
                         <Col xs={12} sx={{ textAlign: "center" }}>
                             <FooterBottomInner>
                                 <CopyrightText>
-                                    &copy; {new Date().getFullYear()} 
+                                    &copy; {new Date().getFullYear()}
                                     <a
-                                        href="https://hasthemes.com/"
+                                        href="#"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                    > Bunzo </a>. Made  with <HeartIcon /> by{" "}
+                                    > Dev Logs by CSandun </a>. Made  with <HeartIcon /> by{" "}
                                     <a
-                                        href="https://hasthemes.com/"
+                                        href="https://csandun.github.io/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        HasThemes
+                                        CSandun
                                     </a>
                                 </CopyrightText>
-                                <ButtonRightBox>
-                                    <Button path="/contact-us" size="large" shape="rounded-10"> Share your thinking <i className="icofont-long-arrow-right"></i></Button>
-                                </ButtonRightBox>
                             </FooterBottomInner>
                         </Col>
                     </Row>

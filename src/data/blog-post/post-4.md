@@ -6,7 +6,7 @@ author: "Roderick"
 format: "image"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 categories: 
-    - Technology
+    - .Net Core
 tags:
     - Food
     - React

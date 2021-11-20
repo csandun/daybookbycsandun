@@ -6,7 +6,7 @@ author: "Jowel"
 format: "image"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 categories: 
-    - Marketing
+    - .Net Core
 tags:
     - Food
     - Marketing

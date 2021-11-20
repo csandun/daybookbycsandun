@@ -1,48 +1,44 @@
 [
     {
-        "footerAbout": "Lorem Ipsum is simply dummy text of the industry orem Ipsum has been the industry's since the when unknown.",
+        "footerAbout": "Share day today learning contents with others.",
         "quickLink": [
             {
-                "text": "About Us",
+                "text": "Home",
                 "path": "/about-us"
+            },           
+            {
+                "text": "Categories",
+                "path": "#"
             },
             {
-                "text": "Contact Us",
-                "path": "/contact-us"
+                "text": "Blogs",
+                "path": "#"
             },
             {
-                "text": "Local Print Ads",
-                "path": "/customize-i-woocommerce-theme-with-countless-video"
-            },
-            {
-                "text": "FAQ’s",
-                "path": "/faq"
-            },
-            {
-                "text": "Careers",
-                "path": "/404"
+                "text": "About CSandun",
+                "path": "https://csandun.github.io/"
             }
         ],
         "quickLinkTwo": [
             {
-                "text": "Privacy Policy",
+                "text": "Backend",
                 "path": "/"
             },
             {
-                "text": "Discussion",
+                "text": "Frontend",
                 "path": "/"
             },
             {
-                "text": "Terms & Conditions",
+                "text": "Azure",
                 "path": "/"
             },
             {
-                "text": "Customer Support",
-                "path": "/contact-us"
+                "text": "Database",
+                "path": "/"
             },
             {
-                "text": "Course FAQ’s",
-                "path": "/faq"
+                "text": "Other",
+                "path": "/"
             }
         ],
         "quickLinkThree": [

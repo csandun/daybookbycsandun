@@ -1,19 +1,18 @@
-[
-    
+[    
     {
-        "name": "Asp.Net Core",
-        "image": "../images/catagory/web.png",
+        "name": ".Net Core",
+        "image": "../images/catagory/dotnet-core.png",
         "color": "video",
         "trending": true
     },
     {
-        "name": "C#",
+        "name": ".Net Framework",
         "image": "../images/catagory/travel.png",
         "color": "education",
-        "trending": true
+        "trending": false
     },
     {
-        "name": "Angular",
+        "name": "C#",
         "image": "../images/catagory/technology.png",
         "color": "technology",
         "trending": true
@@ -25,57 +24,81 @@
         "trending": true
     },
     {
-        "name": "Database",
+        "name": "Angular",
         "image": "../images/topic/02_topic.jpg",
         "color": "food",
         "trending": true
     },
     {
-        "name": "Business",
+        "name": "Java Scripts",
         "image": "../images/topic/03_topic.jpg",
         "color": "business",
-        "trending": true
-    },
-    {
-        "name": "Doctor",
-        "image": "../images/catagory/technology.png",
-        "color": "doctor",
-        "trending": true
-    },
-    {
-        "name": "Lifestyle",
-        "image": "../images/catagory/technology.png",
-        "color": "lifestyle",
         "trending": false
     },
     {
-        "name": "WordPress",
+        "name": "HTML / CSS",
+        "image": "../images/catagory/technology.png",
+        "color": "doctor",
+        "trending": false
+    },
+    {
+        "name": "Azure",
+        "image": "../images/catagory/technology.png",
+        "color": "lifestyle",
+        "trending": true
+    },
+    {
+        "name": "Oralce",
         "image": "../images/catagory/technology.png",
         "color": "WordPress",
         "trending": false
     },
     {
-        "name": "JavaScript",
-        "image": "../images/catagory/8.png",
-        "color": "JavaScript",
-        "trending": false
-    }
-    ,{
-        "name": "UX Design",
+        "name": "Sql Service",
         "image": "../images/catagory/7.png",
         "color": "UX Design",
         "trending": false
     }
     ,{
-        "name": "Online Tutorial",
+        "name": "Mongo Db",
         "image": "../images/catagory/6.png",
         "color": "Online Tutorial",
         "trending": false
     }
     ,{
-        "name": "Laravel",
+        "name": "Microservice",
         "image": "../images/catagory/5.png",
         "color": "Online Tutorial",
+        "trending": true
+    },
+    {
+        "name": "Other",
+        "image": "../images/catagory/8.png",
+        "color": "JavaScript",
         "trending": false
+    },
+    {
+        "name": "Backend",
+        "image": "../images/catagory/8.png",
+        "color": "JavaScript",
+        "trending": false
+    },
+    {
+        "name": "Frontend",
+        "image": "../images/catagory/8.png",
+        "color": "JavaScript",
+        "trending": false
+    },
+    {
+        "name": "Cloud",
+        "image": "../images/catagory/8.png",
+        "color": "JavaScript",
+        "trending": false
+    },
+    {
+        "name": "Database",
+        "image": "../images/catagory/8.png",
+        "color": "JavaScript",
+        "trending": true
     }
 ]
