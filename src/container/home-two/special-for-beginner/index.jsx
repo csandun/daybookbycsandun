@@ -1,5 +1,5 @@
 import React from 'react'
-import {Col, Container, Row} from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image";
 import SpecialBannerOne from '../../../components/special-banner'
@@ -15,8 +15,7 @@ const SpecialForBeginner = () => {
 
     const specialForBeginnerQuery = useStaticQuery(graphql`
         query SpecialForBeginnerQuery {
-            specialBeginnerOne: allMarkdownRemark(
-                    filter: {frontmatter: {is_special_for_beginner: {eq: true}}}
+            specialBeginnerOne: allMarkdownRemark(                    
                     limit: 2
                 ) {
                 edges {
@@ -39,8 +38,7 @@ const SpecialForBeginner = () => {
                     }
                 }
             }
-            specialBeginnerTwo: allMarkdownRemark(
-                filter: {frontmatter: {is_special_for_beginner: {eq: true}}}
+            specialBeginnerTwo: allMarkdownRemark(                
                 limit: 3
                 skip: 2
             ) {
@@ -82,14 +80,14 @@ const SpecialForBeginner = () => {
                 <Row>
                     <Col lg={7}>
                         <SpecialBannerImage>
-                            <StaticImage src="../../../data/images/banners/special-banner.jpg" alt="Special Banner Image"/>
+                            <StaticImage src="../../../data/images/banners/special-banner.jpg" alt="Special Banner Image" />
                         </SpecialBannerImage>
                     </Col>
                     <Col lg={5}>
                         {specialBeginnerOneData && specialBeginnerOneData.map((item, i) => {
                             return (
                                 <SpecialBannerOne
-                                    key ={i}
+                                    key={i}
                                     title={item.node.frontmatter.title}
                                     thume_image={item.node.frontmatter.thume_image}
                                     date={item.node.frontmatter.date}
@@ -105,7 +103,7 @@ const SpecialForBeginner = () => {
                 <Row className="row--35">
                     {specialBeginnerTwoData && specialBeginnerTwoData.map((item, i) => {
                         return (
-                            <Col lg={4} md={6} sm={6} key ={i}> 
+                            <Col lg={4} md={6} sm={6} key={i}>
                                 <SpecialBannerTwo
                                     title={item.node.frontmatter.title}
                                     thume_image={item.node.frontmatter.thume_image}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Col, Container, Row} from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { graphql, useStaticQuery } from 'gatsby'
 import SpecialBannerTwo from '../../../components/special-for-beginner-two'
 import {
@@ -12,8 +12,7 @@ const SpecialForBeginner = () => {
 
     const specialForBeginnerQuery = useStaticQuery(graphql`
         query SpecialForBeginnerTowQuery {
-            specialBeginnerTwo: allMarkdownRemark(
-                filter: {frontmatter: {is_special_for_beginner: {eq: true}}}
+            specialBeginnerTwo: allMarkdownRemark(                
                 limit: 3
                 skip: 2
             ) {
@@ -53,7 +52,7 @@ const SpecialForBeginner = () => {
                 <Row className="row--35">
                     {specialBeginnerTwoData && specialBeginnerTwoData.map((item, i) => {
                         return (
-                            <Col lg={4} md={6} sm={6} key ={i}> 
+                            <Col lg={4} md={6} sm={6} key={i}>
                                 <SpecialBannerTwo
                                     title={item.node.frontmatter.title}
                                     thume_image={item.node.frontmatter.thume_image}

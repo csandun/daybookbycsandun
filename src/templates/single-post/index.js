@@ -182,18 +182,8 @@ const SinglePosts = ({ data, location, pageContext }) => {
                             </PostDetailsContentWrap>
                         </Col>
                         <Col lg={4}>
-                            <div className="blog-details-sidebar">
-                                {author && (
-                                    <PostAuthorBox
-                                        postAuthorName={author.name}
-                                        postAuthorImage={author.image}
-                                        postAuthorBio={author.bio}
-                                        postAuthordescription={author.description}
-                                        authorSlug={author.fields.authorId}
-                                    />
-                                )}  
+                            <div className="blog-details-sidebar">                            
                                 <LatestPostArea/>
-                                <StayInTouchs/>
                             </div>
                         </Col>
                     </Row>
