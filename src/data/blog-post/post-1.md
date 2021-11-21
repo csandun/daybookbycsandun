@@ -2,7 +2,7 @@
 title: "Customize your WooCommerce store with countless design"
 thume_image: "../../data/images/blog/01.jpg"
 date: "2021-02-01"
-author: "Hasan"
+author: "CSandun"
 format: "image"
 video_link: "https://www.youtube.com/watch?v=d7jAiAYusUg"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."

@@ -102,18 +102,18 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                                 </BlogDetailsPostAuthor>
                                             </PostMetaLeftSide>
 
-                                            <PostMidSide>
+                                            <PostMetaRightSide>
                                                 <PostDate>
                                                     <i className="icofont-ui-calendar"></i> 
                                                     <Link to={`/date/${dateSlug}`}>{post.date}</Link>
                                                 </PostDate>
                                                 <PostTime>10 min read</PostTime>
-                                            </PostMidSide>
+                                            </PostMetaRightSide>
 
-                                            <PostMetaRightSide>
+                                            {/* <PostMetaRightSide>
                                                 <a href="#"><StaticImage src="../../data/images/icons/small-bookmark.png" alt=""/></a>
                                                 <a href="#"><StaticImage src="../../data/images/icons/heart.png" alt=""/></a>
-                                            </PostMetaRightSide>
+                                            </PostMetaRightSide> */}
                                         </BlogDetailsMetaBox>
                                         
                                         <Title>{post.title}</Title>
