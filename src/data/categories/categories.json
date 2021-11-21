@@ -18,6 +18,12 @@
         "trending": true
     },
     {
+        "name": "Angular",
+        "image": "../images/catagory/angular.png",
+        "color": "JavaScript",
+        "trending": true
+    },
+    {
         "name": "React",
         "image": "../images/catagory/react.png",
         "color": "marketing",
@@ -25,9 +31,9 @@
     },
     {
         "name": "Angular",
-        "image": "../images/topic/angular.jpg",
+        "image": "../images/topic/angular.png",
         "color": "food",
-        "trending": true
+        "trending": false
     },
     {
         "name": "Java Scripts",
@@ -97,8 +103,9 @@
     },
     {
         "name": "Database",
-        "image": "../images/catagory/8.png",
+        "image": "../images/catagory/database.png",
         "color": "JavaScript",
         "trending": true
     }
+   
 ]
