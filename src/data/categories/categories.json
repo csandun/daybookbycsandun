@@ -13,21 +13,27 @@
     },
     {
         "name": "C#",
-        "image": "../images/catagory/technology.png",
+        "image": "../images/catagory/csharp.png",
         "color": "technology",
         "trending": true
     },
     {
+        "name": "Angular",
+        "image": "../images/catagory/angular.png",
+        "color": "JavaScript",
+        "trending": true
+    },
+    {
         "name": "React",
-        "image": "../images/catagory/7.png",
+        "image": "../images/catagory/react.png",
         "color": "marketing",
         "trending": true
     },
     {
         "name": "Angular",
-        "image": "../images/topic/02_topic.jpg",
+        "image": "../images/topic/angular.png",
         "color": "food",
-        "trending": true
+        "trending": false
     },
     {
         "name": "Java Scripts",
@@ -43,7 +49,7 @@
     },
     {
         "name": "Azure",
-        "image": "../images/catagory/technology.png",
+        "image": "../images/catagory/azure.jpg",
         "color": "lifestyle",
         "trending": true
     },
@@ -67,7 +73,7 @@
     }
     ,{
         "name": "Microservice",
-        "image": "../images/catagory/5.png",
+        "image": "../images/catagory/microservices.png",
         "color": "Online Tutorial",
         "trending": true
     },
@@ -97,8 +103,9 @@
     },
     {
         "name": "Database",
-        "image": "../images/catagory/8.png",
+        "image": "../images/catagory/database.png",
         "color": "JavaScript",
         "trending": true
     }
+   
 ]

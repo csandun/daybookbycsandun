@@ -5,8 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/styled": "^11.6.0",
     "@styled-system/theme-get": "^5.1.2",
     "bootstrap": "4.6.0",
     "disqus-react": "^1.1.1",
@@ -20,6 +21,7 @@
     "gatsby-plugin-sharp": "^3.7.0",
     "gatsby-plugin-svgr-loader": "^0.1.0",
     "gatsby-plugin-theme-ui": "^0.9.1",
+    "gatsby-remark-autolink-headers": "^5.2.0",
     "gatsby-source-filesystem": "^3.7.0",
     "gatsby-transformer-json": "^3.6.0",
     "gatsby-transformer-remark": "^4.4.0",
@@ -32,7 +34,8 @@
     "react-helmet": "^6.1.0",
     "react-modal-video": "^1.2.7",
     "swiper": "^6.7.0",
-    "theme-ui": "^0.9.1"
+    "theme-ui": "^0.9.1",
+    "twin.macro": "^2.8.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

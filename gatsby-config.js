@@ -33,7 +33,14 @@ module.exports = {
         `gatsby-plugin-image`,
         `gatsby-plugin-emotion`,
         `gatsby-plugin-theme-ui`,
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [                    
+                    `gatsby-remark-autolink-headers`,
+                ],
+            },
+        },
         "gatsby-transformer-json",
         {
             resolve: "gatsby-source-filesystem",

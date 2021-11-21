@@ -36,10 +36,13 @@ import {
     CommentTitle,
 } from "./style";
 
+import ToC from "../../components/toc";
+
 const SinglePosts = ({ data, location, pageContext }) => {
     const post = data.markdownRemark.frontmatter;
     const {authorId, dateSlug} = data.markdownRemark.fields;
     const {author} = post;
+    const {headings} = data.markdownRemark;
     debugger;
     const image = getImage(post.thume_image.childImageSharp);
 
@@ -64,7 +67,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
             <BlogDetailsArea>
                 <Container>
                     <Row className="gx-5">
-                        <Col lg={8}>
+                        <Col lg={10}>
                             <PostDetailsContentWrap>
                                 <PostDetailsBody>
                                     <Thumb>
@@ -99,18 +102,18 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                                 </BlogDetailsPostAuthor>
                                             </PostMetaLeftSide>
 
-                                            <PostMidSide>
+                                            <PostMetaRightSide>
                                                 <PostDate>
                                                     <i className="icofont-ui-calendar"></i> 
                                                     <Link to={`/date/${dateSlug}`}>{post.date}</Link>
                                                 </PostDate>
                                                 <PostTime>10 min read</PostTime>
-                                            </PostMidSide>
+                                            </PostMetaRightSide>
 
-                                            <PostMetaRightSide>
+                                            {/* <PostMetaRightSide>
                                                 <a href="#"><StaticImage src="../../data/images/icons/small-bookmark.png" alt=""/></a>
                                                 <a href="#"><StaticImage src="../../data/images/icons/heart.png" alt=""/></a>
-                                            </PostMetaRightSide>
+                                            </PostMetaRightSide> */}
                                         </BlogDetailsMetaBox>
                                         
                                         <Title>{post.title}</Title>
@@ -181,11 +184,14 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                 </PostDetailsBody>
                             </PostDetailsContentWrap>
                         </Col>
-                        <Col lg={4}>
-                            <div className="blog-details-sidebar">                            
-                                <LatestPostArea/>
+                        <Col lg={2}>
+                            <ToC headings={headings} />           
+                            <div className="blog-details-sidebar">   
+                                <ToC headings={headings} />                         
+                                {/* <LatestPostArea/> */}
                             </div>
                         </Col>
+                        
                     </Row>
                 </Container>
             </BlogDetailsArea>
@@ -208,6 +214,11 @@ export const postQuery = graphql`
                 slug
                 authorId
                 dateSlug
+            }
+            headings{
+                id
+                value
+                depth
             }
             frontmatter {
                 categories {
