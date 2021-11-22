@@ -1,5 +1,5 @@
-import {useStaticQuery, graphql } from 'gatsby'
-import {Container, Row, Col } from 'react-bootstrap'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Container, Row, Col } from 'react-bootstrap'
 import Button from '../../../components/shared/button'
 import SingleBlogItem from '../../../components/single-blog-item-two'
 import { slugify } from "@utils/functions";
@@ -49,7 +49,7 @@ const CategoryOne = () => {
         }
     `)
     const categoryData = categoryOneQery.allMarkdownRemark.edges;
-
+    debugger;
     return (
         <CategorySection>
             <Container>
@@ -57,13 +57,13 @@ const CategoryOne = () => {
                     <Col>
                         <SectionTitle>
                             <Title>
-                                {categoryData[0].node.fields.cats[0]}
+                                {/* {categoryData[0].node.fields.cats[0]} */}
                             </Title>
                         </SectionTitle>
                     </Col>
                 </Row>
                 <Row className="row--30">
-                    {categoryData && categoryData.map((item, i)=>{
+                    {categoryData && categoryData.map((item, i) => {
                         return (
                             <Col lg={4} md={6} key={i}>
                                 <SingleBlogItem
@@ -84,7 +84,7 @@ const CategoryOne = () => {
                 <Row>
                     <Col>
                         <MoreButtonBox>
-                            <Button path={`/category/${slugify(categoryData[0].node.fields.cats[0])}`} size="large"> Show More <i className="icofont-long-arrow-right"></i> </Button>
+                            {/* <Button path={`/category/${slugify(categoryData[0].node.fields.cats[0])}`} size="large"> Show More <i className="icofont-long-arrow-right"></i> </Button> */}
                         </MoreButtonBox>
                     </Col>
                 </Row>
